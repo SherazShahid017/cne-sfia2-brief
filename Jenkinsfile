@@ -1,5 +1,6 @@
 pipeline{
     agent any
+	stages{
             ////////////////////////////////////////////////////
             stage ('Build') {
                 steps {
@@ -7,4 +8,5 @@ pipeline{
 		    sh 'sudo docker push sherazshahid017/project-app:latest'
                 }
             }
+	}
 }
